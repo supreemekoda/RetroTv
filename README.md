@@ -81,7 +81,7 @@ Then add FFmpeg to your system PATH.
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/RetroTv.git
+git clone https://github.com/supreemkoda/RetroTv.git
 cd RetroTv
 ```
 
