@@ -1,153 +1,165 @@
-# 📺 RetroTv
+# 🎬 RetroTv Converter
 
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![FFmpeg](https://img.shields.io/badge/FFmpeg-required-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+> ⚡ A futuristic terminal-based video converter powered by FFmpeg ⚡
 
-**RetroTv** is a lightweight Python script that converts modern video formats into **MP4 files compatible with older TVs and DVD players**.
-
-The main script:
-👉 `RetoTv.py`
-
----
-
-## 🎬 Supported Formats
-
-RetroTv can convert the following formats:
-
-* `.mp4`
-* `.mkv`
-* `.avi`
-* `.mov`
-* `.flv`
-
----
-
-## 🎯 Why RetroTv?
-
-Many legacy devices struggle with:
-
-* New video codecs
-* High resolutions (1080p/4K)
-* High bitrates
-
-RetroTv solves this by converting videos into a **device-friendly MP4 format (H.264 + AAC)** that works on:
-
-* 📺 Older televisions
-* 💿 DVD players (USB supported)
-* 📼 Legacy media players
+RetroTv Converter is a stylish, interactive command-line tool designed to batch convert videos into TV-compatible formats — all inside a sleek, cyberpunk-inspired terminal interface.
 
 ---
 
 ## 🚀 Features
 
-* ✅ Converts multiple video formats
-* ✅ Optimized for legacy playback
-* ✅ Simple command-line interface
-* ✅ Fast and efficient (powered by FFmpeg)
-* ✅ Batch conversion support *(if implemented)*
+* 🎨 **Futuristic terminal UI** (powered by `rich`)
+* 📂 **Interactive directory navigation**
+* ⚡ **Parallel video conversion**
+* 🎞️ Supports multiple formats:
 
----
-
-## ⚙️ Requirements
-
-Make sure you have the following installed:
-
-* **Python 3.x**
-* **FFmpeg**
-
-### Install FFmpeg
-
-**Linux:**
-
-```bash
-sudo apt install ffmpeg
-```
-
-**macOS:**
-
-```bash
-brew install ffmpeg
-```
-
-**Windows:**
-Download from: [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html)
-Then add FFmpeg to your system PATH.
+  * `.mp4`, `.mkv`, `.avi`, `.mov`, `.flv`
+* 🧠 Smart defaults for performance (multi-threaded conversion)
+* 🖥️ Starts automatically in your **home directory**
 
 ---
 
 ## 📦 Installation
 
-Clone the repository:
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/supreemkoda/RetroTv.git
-cd RetroTv
+git clone https://github.com/your-username/retro-tv-converter.git
+cd retro-tv-converter
+```
+
+### 2. Install dependencies
+
+```bash
+pip install rich tqdm
+```
+
+### 3. Install FFmpeg
+
+Make sure FFmpeg is installed and available in your system PATH.
+
+* Windows: https://ffmpeg.org/download.html
+* Linux:
+
+```bash
+sudo apt install ffmpeg
+```
+
+* macOS:
+
+```bash
+brew install ffmpeg
 ```
 
 ---
 
 ## ▶️ Usage
 
-Convert a single video:
+Run the app:
 
 ```bash
-python RetoTv.py input_video.mkv
-```
-
-Convert multiple files (if supported):
-
-```bash
-python RetoTv.py *.avi
+python main.py
 ```
 
 ---
 
-## 📁 Output
+## 🧭 Terminal Commands
 
-* Output files are saved as `.mp4`
-* Optimized for compatibility with older devices
+Once launched, you'll enter an interactive terminal interface.
 
----
+### 📍 Starting Point
 
-## 🔧 Encoding Details
-
-RetroTv uses FFmpeg with settings similar to:
-
-* **Video Codec:** H.264
-* **Audio Codec:** AAC
-* **Resolution:** Scaled down if needed
-* **Bitrate:** Adjusted for legacy devices
+* The app starts in your **home directory** (`Path.home()`)
 
 ---
 
-## 🛠️ Customization
+### 💻 Available Commands
 
-You can edit `RetoTv.py` to:
-
-* Change resolution
-* Adjust bitrate
-* Force aspect ratio
-* Tune output for specific devices (PAL/NTSC)
-
----
-
-## ⚠️ Notes
-
-* Original files are not modified
-* Output quality depends on source file
-* Very old devices may have strict limitations (e.g., resolution or bitrate caps)
+| Command       | Description                     |
+| ------------- | ------------------------------- |
+| `cd <folder>` | Enter a folder                  |
+| `back`        | Go up one directory             |
+| `list`        | Show files in current directory |
+| `convert`     | Convert all supported videos    |
+| `exit`        | Quit the app                    |
 
 ---
 
-## 📄 License
+### 🧪 Example Workflow
 
-This project is licensed under the MIT License.
+```bash
+>>> list
+>>> cd Videos
+>>> list
+>>> convert
+```
+
+✔ All converted videos will be saved in:
+
+```
+converted_for_tv/
+```
+
+---
+
+## ⚙️ Conversion Settings
+
+Videos are converted using:
+
+* Codec: `libx264`
+* Resolution: max 1280px width
+* Audio: AAC stereo
+* Format: `.mp4`
+* Optimized for **TV compatibility**
+
+---
+
+## 📁 Project Structure
+
+```
+retro_tv/
+│── main.py              # Terminal UI entry point
+│── batch_processor.py  # Handles batch conversion
+│── converter.py        # FFmpeg logic
+│── config.py           # Settings and constants
+```
+
+---
+
+## 🎨 UI Preview
+
+```
+╔══════════════════════════════╗
+║     RetroTv Converter        ║
+║   ⚡ Futuristic Video Tool ⚡  ║
+╚══════════════════════════════╝
+```
+
+---
+
+## 🔥 Future Improvements
+
+* 🎮 Full-screen terminal UI
+* 🔍 Auto-complete navigation
+* 📊 Live conversion stats
+* 🎞️ FFmpeg output display
+* 🌌 Animated interface
 
 ---
 
 ## 🤝 Contributing
 
-Feel free to fork the project, open issues, or submit pull requests!
+Pull requests are welcome!
+If you have ideas to improve the UI or performance, feel free to fork and contribute.
 
 ---
+
+## 📜 License
+
+MIT License
+
+---
+
+## ⚡ Author
+
+Built with style and speed ⚡
