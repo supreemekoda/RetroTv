@@ -58,7 +58,7 @@ brew install ffmpeg
 Run the app:
 
 ```bash
-python Retro.py
+python RetroTv.py
 ```
 
 ---
