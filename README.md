@@ -24,7 +24,7 @@ RetroTv Converter is a stylish, interactive command-line tool designed to batch 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/retro-tv-converter.git
+git clone https://github.com/supreemekoda/RetroTv.git
 cd retro-tv-converter
 ```
 
