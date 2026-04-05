@@ -58,7 +58,7 @@ brew install ffmpeg
 Run the app:
 
 ```bash
-python main.py
+python Retro.py
 ```
 
 ---
