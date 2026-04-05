@@ -117,7 +117,7 @@ Videos are converted using:
 ## 📁 Project Structure
 
 ```
-retro_tv/
+RetroTv/
 │── main.py              # Terminal UI entry point
 │── batch_processor.py  # Handles batch conversion
 │── converter.py        # FFmpeg logic
